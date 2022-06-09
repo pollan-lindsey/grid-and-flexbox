@@ -100,7 +100,7 @@ function q6(){
         let Answer6 = prompt("Guess a number between 1 and 10.");
         if (Answer6 == "5"){
         alert("Correct!");
-       // points = points++;
+        points++;
         q7();
     }
     else if (Answer6 != "5"){
@@ -111,7 +111,7 @@ function q6(){
 function q7(){
     const colors = ["red", "purple", "yellow", "orange"];
     let Answer7 = prompt("which of the following are primary colors? (There's more than one answer, so guess either one.) Orange, Yellow, Red, or Purple?");
-    let Answer7L = Answer7.toLocaleLowerCase();
+    let Answer7L = Answer7.toLowerCase();
     if (Answer7L == "red" || Answer7L == "yellow"){
        // points = points++;
         alert("Correct!");
