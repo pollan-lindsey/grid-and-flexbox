@@ -103,3 +103,27 @@ body {
   footer {
     text-align: center;
   }
+
+/*below is stacking everything when the screen gets too thin*/
+@media(max-width: 768px) {
+    .testimonials {
+        grid-template-columns: 1fr;
+        width: 100%
+    }
+/* below is reseting the cards bc they span grid places*/
+    .card:nth-of-type(1){
+        grid-column: 1; 
+    
+    }
+    
+    .card:nth-of-type(4){
+        grid-column: 1; 
+        grid-row: 4; /*can change this to whatever number if I want to change the order when stacking without using html*/
+    }
+    
+    .card:nth-of-type(5){
+        grid-column: 1; 
+        grid-row: 5; 
+    }
+    
+}  
